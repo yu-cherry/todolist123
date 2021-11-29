@@ -12,5 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::any('/test',[suisei::class,'test']);
+//Route::any('/test',[suisei::class,'test']);
+Route::get('/',function(){
+  return view('/layouts.master');});
+//
+//
+//
+
+
+Route::get('/test',[\App\Http\Controllers\suisei::class,'suisei']);
+
 
