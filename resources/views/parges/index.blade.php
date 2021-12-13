@@ -2,7 +2,7 @@
 @section('content')
 
 
-    <table>
+    <table class="table">
         <thead>
 
             <tr>
@@ -18,13 +18,14 @@
         <thead>
         @foreach($data as $row)
             <tr>
-
-
             <td>{{$row->title}}</td>
             <td>{{$row->content}}</td>
             <td>{{$row->remark}}</td>
+                <td>
+                <butoon class="btn btn-outline-success">修改</butoon>
+                <butoon class="btn btn-outline-danger" onclick="">刪除</butoon>
+                </td>
             </tr>
-
 
         @endforeach
         </thead>
